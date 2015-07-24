@@ -1,7 +1,6 @@
 <?php
 
 /*
- *
  * personal API
  * all calls follow pattern:
  *  /ObjectName/Method/format

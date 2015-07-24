@@ -1,0 +1,12 @@
+li.under-dev{
+	color:red;
+	font-weight:normal;
+}
+li.complete{
+	color:green;
+	font-weight:bold;
+}
+ul li{
+	font-weight:bold;
+}
+

@@ -20,3 +20,4 @@ data.php
 old/*
 examples/test.php
 error_log
+*.swp

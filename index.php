@@ -226,6 +226,7 @@ if($_GET['q'] !=""){
     </div>
 <img src="https://www.linkedin.com/profile/view?authToken=zRgB&authType=name&id=11170810" />
   </body>
+
   </html>
   
   

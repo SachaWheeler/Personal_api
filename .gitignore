@@ -16,7 +16,5 @@
 *.Trashes
  
 pass.php
-<<<<<<< HEAD
 data.php
-=======
->>>>>>> 39935d0cd9aec09f08a333dbcb8ca475f3796a5a
+old/*

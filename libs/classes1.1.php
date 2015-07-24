@@ -125,7 +125,7 @@ class Lastfm extends BaseClass{
 
 	public function __construct($user){
 		$this->user = $this->getUsername($user);
-		$this->key = "03337138fe5149f05088428490c33f0b";
+		$this->key = $this->getPassword("lastfm");
         $this->domain = "http://ws.audioscrobbler.com/2.0/?api_key=".$this->key;
         $this->latestTrack = $this->domain."&method=user.getrecenttracks&user={$this->user}&limit=1";
 		$this->events = $this->domain."&method=user.getevents&user={$this->user}&limit=1";

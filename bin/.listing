@@ -1,0 +1,4 @@
+drwxr-xr-x    2 swheeler   swheeler         4096 Dec  1  2014 .
+drwxr-x---   12 swheeler   99               4096 May 26 13:40 ..
+-rw-r--r--    1 swheeler   swheeler         1487 May 26 13:40 update_google.php
+-rw-r--r--    1 swheeler   swheeler          666 May 26 13:40 update_wikipedia.php

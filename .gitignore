@@ -1,0 +1,18 @@
+.listing
+.htpasswd
+*.sql
+*.swp
+*.zip
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.log
+*.gz
+
+# Hidden system files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+ 
+pass.php

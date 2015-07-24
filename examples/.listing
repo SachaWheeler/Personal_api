@@ -1,8 +1,0 @@
-drwxr-xr-x    2 swheeler   swheeler         4096 Mar 25 23:26 .
-drwxr-x---   12 swheeler   99               4096 May 26 13:40 ..
--rw-r--r--    1 swheeler   swheeler         1310 Jan 24  2014 LocationBearing.php
--rw-r--r--    1 swheeler   swheeler         2222 Jan 29  2014 LocationHistory.php
--rw-r--r--    1 swheeler   swheeler         2684 Jan 24  2014 LocationHistoryByHour.php
--rw-r--r--    1 swheeler   swheeler         1413 Mar 25 23:26 error_log
--rw-r--r--    1 swheeler   swheeler           30 Feb  7  2014 index.php
--rw-r--r--    1 swheeler   swheeler          458 Jan 23  2014 test.php

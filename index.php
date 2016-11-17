@@ -17,6 +17,7 @@
  *    html
  */
 
+error_reporting(0);
 $VERSION = "v1.1";
 
 if (substr_count($_SERVER[‘HTTP_ACCEPT_ENCODING’], ‘gzip’))
@@ -47,10 +48,10 @@ if($_GET['q'] !=""){
     header('Content-Type: application/json');
   else
     header("Content-type: text/html");
-  
+
   $obj = new $ObjectName("sacha@sachawheeler.com");
   echo $obj->$Method($Format);
-  
+
 }else{ ?>
   <html>
     <head>
@@ -58,12 +59,12 @@ if($_GET['q'] !=""){
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
       <link rel="stylesheet" type="text/css" href="css/default.css" />
       <style>
-        /* Skyscraper ad*/ 
-        div#skyscraper 
-        { 
-          position:absolute; 
-          top:50px; 
-          left:790px; 
+        /* Skyscraper ad*/
+        div#skyscraper
+        {
+          position:absolute;
+          top:50px;
+          left:790px;
         }
       </style>
     </head>
@@ -151,7 +152,7 @@ if($_GET['q'] !=""){
         </ul>
         <li>/Personal</li>
         <ul>
-          <li class="complete">/age/[  <a href="/<?=$VERSION ?>/Personal/age/xml">xml</a>, 
+          <li class="complete">/age/[  <a href="/<?=$VERSION ?>/Personal/age/xml">xml</a>,
                         <a href="/<?=$VERSION ?>/Personal/age/json">json</a>,
                         <a href="/<?=$VERSION ?>/Personal/age/html">html</a>]?unit=[
                         <a href="/<?=$VERSION ?>/Personal/age/xml?unit=s">s</a> (second),
@@ -159,12 +160,12 @@ if($_GET['q'] !=""){
                         <a href="/<?=$VERSION ?>/Personal/age/xml?unit=h">h</a> (hour),
                         <a href="/<?=$VERSION ?>/Personal/age/xml?unit=d">d</a> (day),
                         <a href="/<?=$VERSION ?>/Personal/age/xml?unit=y">y</a> (year)(default)]</li>
-          <li class="complete">/weight/[  <a href="/<?=$VERSION ?>/Personal/weight/xml">xml</a>, 
+          <li class="complete">/weight/[  <a href="/<?=$VERSION ?>/Personal/weight/xml">xml</a>,
                           <a href="/<?=$VERSION ?>/Personal/weight/json">json</a>,
                           <a href="/<?=$VERSION ?>/Personal/weight/html">html</a>]?unit=[
                           <a href="/<?=$VERSION ?>/Personal/weight/xml?unit=lb">lb</a> (pound),
                           <a href="/<?=$VERSION ?>/Personal/weight/xml?unit=kg">kg</a> (kilogram)(default)]</li>
-          <li class="complete">/height/[  <a href="/<?=$VERSION ?>/Personal/height/xml">xml</a>, 
+          <li class="complete">/height/[  <a href="/<?=$VERSION ?>/Personal/height/xml">xml</a>,
                           <a href="/<?=$VERSION ?>/Personal/height/json">json</a>,
                           <a href="/<?=$VERSION ?>/Personal/height/html">html</a>]?unit=[
                           <a href="/<?=$VERSION ?>/Personal/height/xml?unit=ft">ft</a> (feet),
@@ -202,7 +203,7 @@ if($_GET['q'] !=""){
       </ul>
     </ul>
     <p>More coming soon...</p>
-    
+
     <h2>Sources</h2>
     <p>I grab this information from a variety of sources, including:</p>
     <ul>
@@ -221,13 +222,13 @@ if($_GET['q'] !=""){
       <li>Chrome History</li>
       <li>etc.</li>
     </ul>
-    
+
     <p><a href="http://sachawheeler.com">Back to SachaWheeler.com</a></p>
     </div>
 <img src="https://www.linkedin.com/profile/view?authToken=zRgB&authType=name&id=11170810" />
   </body>
 
   </html>
-  
-  
+
+
 <?php } ?>

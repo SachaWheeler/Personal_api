@@ -8,8 +8,23 @@
 	<head><title>SachaWheeler.com API - bearing example</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+<style>div#skyscraper {
+    position: absolute;
+    top: 50px;
+    left: 790px;
+}</style>
   </head>
   <body>
+<div id="skyscraper">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- API skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-0797355803969480"
+     data-ad-slot="6336133752"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
 <? include_once "../analytics.php"; ?>
 	Sacha is currently located at:
 <ul>

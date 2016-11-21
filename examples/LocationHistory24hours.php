@@ -4,7 +4,8 @@
     $location = new SimpleXMLElement($loc->latest("xml"));
     //print_r($location);
     $CENTER = "{$location->latitude}, {$location->longitude}";
-    $history = new SimpleXMLElement($loc->history("xml"));
+    $_GET['d'] = "1day";
+    $history = new SimpleXMLElement($loc->bydate("xml"));
     //echo "<!-- ", print_r($history, true), " -->\n";
 
  ?>
@@ -20,7 +21,7 @@
         padding: 0px
       }
     </style>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw8NquQ8hadIeOFJO0cLD0S_emIkJME4A"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy-cV4svuzj20orAw8PvTBAyd20QSW-88"></script>
     <script>
 var map;
 function initialize() {

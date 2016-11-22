@@ -398,6 +398,7 @@ class Location extends BaseClass{
         $history = $this->conn->ExecuteSQL("Select id, created as date, latitude, longitude
             from location
             where UNIX_TIMESTAMP(created) > {$date}
+            and latitude + longitude > 0
             order by created ASC");
         return $this->format($format, $history);
     }

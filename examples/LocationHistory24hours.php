@@ -37,9 +37,19 @@ var polylinepoints = new Array();
   var locations =
     [
 <?php
-    foreach($history as $place){
-        if($x++) echo ",\n";
-        echo "\t\t", "['", addslashes($place->street_addr), "', '", $place->latitude, "', '", $place->longitude, "', '", $place->updated, "']";
+    if(count($history)){
+        foreach($history as $place){
+            if($x++) echo ",\n";
+                echo "\t\t",
+                    "['", addslashes($place->street_addr), "', '",
+                    $place->latitude, "', '", $place->longitude, "',
+                    '", $place->updated, "']";
+        }
+    }else{
+                echo "\t\t",
+                    "['', '",
+                    $location->latitude, "', '", $location->longitude, "', '']";
+
     }
     echo "\n";
 ?>

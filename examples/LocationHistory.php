@@ -20,7 +20,7 @@
         padding: 0px
       }
     </style>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw8NquQ8hadIeOFJO0cLD0S_emIkJME4A"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRC0kyEn2hJKbiHEu4K9zqpkcSlgT-wUo"></script>
     <script>
 var map;
 function initialize() {

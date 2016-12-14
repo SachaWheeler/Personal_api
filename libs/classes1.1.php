@@ -288,7 +288,7 @@ class Location extends BaseClass{
 
             break;
         }
-        if($this->latitude > 0 && $this->longitude > 0){
+        //if($this->latitude > 0 && $this->longitude > 0){
             // http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true_or_false
             $locLookup = "http://maps.googleapis.com/maps/api/geocode/xml?latlng={$this->latitude},{$this->longitude}&sensor=true";
             $xml = new SimpleXMLElement($this->fetch($locLookup));
@@ -343,7 +343,7 @@ class Location extends BaseClass{
                 $now = date("Y-m-d H:i:s", strtotime("+8 hours")); // HACK - remove the 8 hours hack!
                 $this->conn->ExecuteSQL("UPDATE location set updated = '{$now}' where id = {$lastID}");
             }
-        } // end if $lat > 0 && $long > 0
+        // } // end if $lat > 0 && $long > 0
     }
 
     public function latest($format){

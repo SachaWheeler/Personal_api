@@ -46,7 +46,7 @@ function initialize() {
                     '", $place->updated, "']";
         }
     }else{
-                echo "//x\n\t\t",
+                echo "\t\t",
                     "['', '",
                     $location->latitude, "', '", $location->longitude, "', '']";
 

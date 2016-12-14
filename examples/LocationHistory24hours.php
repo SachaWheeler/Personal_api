@@ -32,7 +32,7 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var bounds = new google.maps.LatLngBounds ();
-var polylinepoints = new Array();
+  var polylinepoints = new Array();
 
   var locations =
     [
@@ -46,7 +46,7 @@ var polylinepoints = new Array();
                     '", $place->updated, "']";
         }
     }else{
-                echo "\t\t",
+                echo "//x\n\t\t",
                     "['', '",
                     $location->latitude, "', '", $location->longitude, "', '']";
 

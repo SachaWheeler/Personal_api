@@ -313,7 +313,7 @@ class Location extends BaseClass{
             $lastID = $latest->id;
 
             $locPrecision = 3;
-            $locPrecisionConstant = 2;
+            $locPrecisionConstant = 1;
     /* */        echo "previous lat", "\n",
                 $latest->latitude/$locPrecisionConstant, "\n",
                 $this->latitude/$locPrecisionConstant, "\n",

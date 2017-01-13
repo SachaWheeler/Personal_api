@@ -395,7 +395,7 @@ class Location extends BaseClass{
         if(preg_match("/(\d+)(year|month|month|week|day|hour)/", $d, $matches)){
             $date = strtotime("-".$matches[1]." ".$matches[2]);
         }
-        $history = $this->conn->ExecuteSQL("Select id, created as date, latitude, longitude
+        $history = $this->conn->ExecuteSQL("Select id, updated as date, latitude, longitude
             from location
             where UNIX_TIMESTAMP(created) > {$date}
             and latitude + longitude > 0

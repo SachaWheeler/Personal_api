@@ -397,7 +397,7 @@ class Location extends BaseClass{
         }
         $history = $this->conn->ExecuteSQL("Select id, updated as date, latitude, longitude
             from location
-            where UNIX_TIMESTAMP(created) > {$date}
+            where UNIX_TIMESTAMP(updated) > {$date}
             and latitude + longitude > 0
             order by updated ASC");
         return $this->format($format, $history);

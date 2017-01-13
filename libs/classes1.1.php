@@ -399,7 +399,7 @@ class Location extends BaseClass{
             from location
             where UNIX_TIMESTAMP(created) > {$date}
             and latitude + longitude > 0
-            order by created ASC");
+            order by updated ASC");
         return $this->format($format, $history);
     }
 

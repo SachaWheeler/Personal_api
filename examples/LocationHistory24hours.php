@@ -81,7 +81,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
   <body>
-<? include_once "../analytics.php"; ?>
+<? //include_once "../analytics.php"; ?>
     <div id="map-canvas"></div>
   </body>
 </html>
